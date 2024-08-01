@@ -13,10 +13,10 @@ import Header from './header';
 
 // ----------------------------------------------------------------------
 
-const pathsOnDark = ['/sandbox'];
+const pathsOnDark = ['/privacypolicy'];
 
 const spacingLayout = [
-  '/', '/sandbox'
+  '/', '/privacypolicy'
 ];
 
 export default function MainLayout({ children }) {
