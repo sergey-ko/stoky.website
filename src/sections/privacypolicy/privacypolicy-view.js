@@ -49,13 +49,13 @@ const PrivacyPolicyView = () => (
       </p>
 
       <p>
-        <strong>5. Children's Privacy</strong>
+        <strong>5. Children&apos;s Privacy</strong>
         Our application is not intended for use by children under the age of 13. We do not knowingly handle information from children under 13. If we become aware that we have inadvertently received information from a child under 13, we will take steps to delete such information from our records.
       </p>
 
       <p>
         <strong>6. Changes to This Privacy Policy</strong>
-        We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. Your continued use of our application after the effective date of the changes constitutes your acceptance of the revised Privacy Policy.
+        We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the &apos;Last updated&apos; date. Your continued use of our application after the effective date of the changes constitutes your acceptance of the revised Privacy Policy.
       </p>
 
       <p>
