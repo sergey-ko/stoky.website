@@ -4,7 +4,7 @@ import HomeView from 'src/sections/_home/view/home-view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Adapative Case Management in AI Era',
+  title: 'AI Assitant for Stock Market',
 };
 
 export default function HomePage() {
