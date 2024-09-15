@@ -8,12 +8,9 @@ import { usePathname } from 'src/routes/hooks';
 
 import { HEADER } from '../config-layout';
 
-import Footer from './footer';
-import Header from './header';
 
 // ----------------------------------------------------------------------
 
-const pathsOnDark = ['/privacypolicy'];
 
 const spacingLayout = [
   '/', '/privacypolicy'

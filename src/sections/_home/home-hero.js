@@ -11,14 +11,10 @@ import { inputBaseClasses } from '@mui/material/InputBase';
 import { inputLabelClasses } from '@mui/material/InputLabel';
 import { alpha, styled, useTheme } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
 import Image from 'src/components/image';
 import { bgGradient } from 'src/theme/css';
 import Iconify from 'src/components/iconify';
-import { HEADER } from 'src/layouts/config-layout';
 import { useResponsive } from 'src/hooks/use-responsive';
-
-
 
 
 // ----------------------------------------------------------------------
@@ -81,15 +77,15 @@ export default function HomeHero() {
               </Typography> */}
 
               <Typography variant="h3">
-                [intern] &nbsp;&nbsp;
+                {/* [intern] &nbsp;&nbsp; */}
                 <Box component="span" sx={{ color: 'secondary.main' }}>
                   {` Quantitative Researcher`}
                 </Box>
               </Typography>
 
               <Typography variant="h4" sx={{ color: 'text.secondary' }}>
-                Your 24x7 Personal Assitant.
-                Basic analysis on stock market data, backtest strategies, and generate trading signals.
+                Your 24x7 Personal Trading Assitant.
+                Basic analysis of stock market and crypto currencies data, backtest strategies, generate trading signals.
               </Typography>
 
               <Stack direction="row" spacing={2}>
