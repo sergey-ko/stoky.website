@@ -79,13 +79,17 @@ export default function HomeHero() {
               <Typography variant="h3">
                 {/* [intern] &nbsp;&nbsp; */}
                 <Box component="span" sx={{ color: 'secondary.main' }}>
-                  {` Quantitative Researcher`}
+                  {` Your 24x7 Trading Assistant`}
                 </Box>
               </Typography>
 
               <Typography variant="h4" sx={{ color: 'text.secondary' }}>
-                Your 24x7 Personal Trading Assitant.
-                Basic analysis of stock market and crypto currencies data, backtest strategies, generate trading signals.
+                <ul>
+                  <li>stock market and crypto market analysis</li>
+                  <li>strategy backtesting, optimization, discovery</li>
+                  <li>trading signals and alerts</li>
+                  <li>access to best practices</li>
+                </ul>
               </Typography>
 
               <Stack direction="row" spacing={2}>
