@@ -8,7 +8,7 @@ import {AIShowcase} from '@/components/AIShowcase';
 import {AIPainPoints} from '@/components/AIPainPoints';
 import {AIProcess} from '@/components/AIProcess';
 import {AIFinalSolution} from '@/components/AIFinalSolution';
-import {AIBenefits} from '@/components/AIBenefits';
+import {AIWhyUs} from '@/components/AIBenefits';
 import {AIPricingPlans} from '@/components/AIPricingPlans';
 import {AIPartnerships} from '@/components/AIPartnerships';
 import {AITestimonial} from '@/components/AITestimonial';
@@ -36,7 +36,7 @@ export default function AIDataAccessPage() {
       <AIPainPoints />
       <AIProcess />
       <AIFinalSolution />
-      <AIBenefits />
+      <AIWhyUs />
       <AIPricingPlans />
       {/* <AIPartnerships /> */}
       <AITestimonial />

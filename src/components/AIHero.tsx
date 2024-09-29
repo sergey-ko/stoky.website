@@ -11,10 +11,10 @@ export function AIHero() {
           AI Assistant
         </h1>
         <h2 className="text-4xl font-bold mb-6">
-          Ease your data analysis
+          6 Months Program
         </h2>
         <p className="text-2xl mb-10 max-w-3xl mx-auto">
-          Leverage Our Expertise with Stoky to Build AI Assistants Tailored to Your Business
+          To Build AI Assistants Tailored to Your Business
         </p>
         <Button 
           size="lg" 

@@ -3,37 +3,37 @@ import { Clock, LineChart, Scale, Sliders, DollarSign } from "lucide-react"
 
 const benefits = [
   {
-    title: "Time Efficiency",
-    description: "Automate data analysis tasks, reducing time spent on manual efforts.",
-    icon: Clock,
-  },
-  {
-    title: "Actionable Insights",
-    description: "Provide insights to non-technical team members with easy-to-understand outputs.",
-    icon: LineChart,
-  },
-  {
-    title: "Scalability",
-    description: "The solution is designed to scale as your company grows, both in data volume and complexity.",
-    icon: Scale,
-  },
-  {
-    title: "Customization",
-    description: "Tailored to fit your specific data sources and business requirements.",
+    title: "AI",
+    description: "While building Stoky we have learned that AI is not a one-size-fits-all solution. We have the expertise to choose the right AI for the right job.",
     icon: Sliders,
   },
   {
-    title: "Cost-Effective",
-    description: "Reduce dependency on large analytics teams by empowering internal teams with AI.",
-    icon: DollarSign,
+    title: "Big Data",
+    description: "Marketing data, IIoT data, financial data, etc. we have the expertise to handle it.",
+    icon: LineChart,
   },
+  {
+    title: "Business Requirements",
+    description: "Understand your business requirements and build a solution that fits.",
+    icon: Scale,
+  },
+  // {
+  //   title: "Customization",
+  //   description: "Tailored to fit your specific data sources and business requirements.",
+  //   icon: Sliders,
+  // },
+  // {
+  //   title: "Cost-Effective",
+  //   description: "Reduce dependency on large analytics teams by empowering internal teams with AI.",
+  //   icon: DollarSign,
+  // },
 ]
 
-export function AIBenefits() {
+export function AIWhyUs() {
   return (
     <section className="py-24 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 text-white">Why Us</h2>
+        <h2 className="text-5xl font-extrabold text-center mb-16 text-white">Our Expertise</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <Card 
