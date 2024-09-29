@@ -105,14 +105,22 @@ export function PlatformCards() {
                 />
               </div>
               <div className="md:w-1/2 h-64 md:h-auto relative">
-                <Image
-                  src={platform.imageSrc}
-                  alt={platform.name}
-                  layout="responsive"
-                  width={500}
-                  height={300}
-                  objectFit="cover"
-                />
+                {platform.name === "Studio" ? (
+                  <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700">
+                    <span className="text-3xl font-bold text-gray-600 dark:text-gray-300">
+                      Coming Soon
+                    </span>
+                  </div>
+                ) : (
+                  <Image
+                    src={platform.imageSrc}
+                    alt={platform.name}
+                    layout="responsive"
+                    width={500}
+                    height={300}
+                    objectFit="cover"
+                  />
+                )}
               </div>
             </div>
           ))}

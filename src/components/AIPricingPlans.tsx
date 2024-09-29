@@ -52,7 +52,7 @@ export function AIPricingPlans() {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-900 to-black">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-extrabold text-center mb-16 text-white">Our AI Solutions Pricing</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-16 text-white">Our AI Solutions Pricing</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <Card key={index} className={`bg-gray-800 ${plan.popular ? 'ring-2 ring-blue-500' : ''} flex flex-col`}>

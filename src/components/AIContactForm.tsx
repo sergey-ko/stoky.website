@@ -14,15 +14,48 @@ export function AIContactForm() {
     message: "",
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState("")
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitMessage("")
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          to: 'sk@stoky.pro'
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitMessage("Thank you for your message. We'll get back to you soon!")
+        setFormData({ name: "", email: "", company: "", message: "" })
+      } else {
+        setSubmitMessage("There was an error sending your message. Please try again.")
+      }
+    } catch (error) {
+      setSubmitMessage("There was an error sending your message. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
-    <section id="contact" className="py-32 bg-gray-900">
-      <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-20 text-white">Contact Us</h2>
-        <form className="max-w-2xl mx-auto space-y-6">
+    <section id="contact" className="py-24 bg-gradient-to-br from-gray-900 to-black">
+      <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-extrabold text-center mb-16 text-white">Contact Us</h2>
+        <form className="max-w-2xl mx-auto space-y-6" onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="relative">
               <Input
@@ -99,9 +132,13 @@ export function AIContactForm() {
           <Button
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition-all duration-200 ease-in-out hover:shadow-lg"
+            disabled={isSubmitting}
           >
-            Request a Consultation
+            {isSubmitting ? "Sending..." : "Request a Consultation"}
           </Button>
+          {submitMessage && (
+            <p className="text-center text-sm mt-4 text-white">{submitMessage}</p>
+          )}
         </form>
       </div>
     </section>

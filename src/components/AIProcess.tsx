@@ -50,7 +50,7 @@ export function AIProcess() {
   return (
     <section className="py-24 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-extrabold text-center mb-16 text-gray-100">Program Stages</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-100">Program Stages</h2>
         <p className="text-2xl text-center mb-16 text-gray-100">We will go through the following stages to build your AI assistant.</p>
         <div className="flex flex-col md:flex-row justify-between items-stretch space-y-8 md:space-y-0 md:space-x-8">
           {processSteps.map((step, index) => (

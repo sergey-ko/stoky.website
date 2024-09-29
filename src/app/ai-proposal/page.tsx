@@ -39,7 +39,7 @@ export default function AIDataAccessPage() {
       <AIWhyUs />
       <AIPricingPlans />
       {/* <AIPartnerships /> */}
-      <AITestimonial />
+      {/* <AITestimonial /> */}
       <AIFAQ />
       <AIContactForm />
     </div>
