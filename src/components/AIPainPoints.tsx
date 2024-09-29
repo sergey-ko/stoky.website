@@ -8,14 +8,14 @@ const painPoints = [
 
 export function AIPainPoints() {
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Common Challenges</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-white">Common Challenges with Internal Data</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {painPoints.map((point, index) => (
-            <Card key={index} className="bg-white hover:shadow-xl transition-shadow duration-300">
+            <Card key={index} className="bg-gray-800 hover:bg-gray-700 transition-colors duration-300">
               <CardContent className="p-6">
-                <p className="text-lg text-gray-600">{point}</p>
+                <p className="text-lg text-gray-300">{point}</p>
               </CardContent>
             </Card>
           ))}

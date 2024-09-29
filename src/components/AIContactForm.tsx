@@ -19,9 +19,9 @@ export function AIContactForm() {
   }
 
   return (
-    <section id="contact" className="py-32 bg-white">
+    <section id="contact" className="py-32 bg-gray-900">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-20">Contact Us</h2>
+        <h2 className="text-4xl font-bold text-center mb-20 text-white">Contact Us</h2>
         <form className="max-w-2xl mx-auto space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="relative">
@@ -31,13 +31,13 @@ export function AIContactForm() {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="peer h-14 w-full border border-gray-300 rounded-md text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                className="peer h-14 w-full bg-gray-800 border-gray-700 text-white placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
                 placeholder="Name"
                 required
               />
               <Label
                 htmlFor="name"
-                className="absolute left-2 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
+                className="absolute left-2 -top-2.5 bg-gray-900 px-1 text-sm text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
               >
                 Name
               </Label>
@@ -49,13 +49,13 @@ export function AIContactForm() {
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                className="peer h-14 w-full border border-gray-300 rounded-md text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                className="peer h-14 w-full bg-gray-800 border-gray-700 text-white placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
                 placeholder="Email"
                 required
               />
               <Label
                 htmlFor="email"
-                className="absolute left-2 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
+                className="absolute left-2 -top-2.5 bg-gray-900 px-1 text-sm text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
               >
                 Email
               </Label>
@@ -68,13 +68,13 @@ export function AIContactForm() {
               name="company"
               value={formData.company}
               onChange={handleInputChange}
-              className="peer h-14 w-full border border-gray-300 rounded-md text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+              className="peer h-14 w-full bg-gray-800 border-gray-700 text-white placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
               placeholder="Company"
               required
             />
             <Label
               htmlFor="company"
-              className="absolute left-2 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
+              className="absolute left-2 -top-2.5 bg-gray-900 px-1 text-sm text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
             >
               Company
             </Label>
@@ -85,13 +85,13 @@ export function AIContactForm() {
               name="message"
               value={formData.message}
               onChange={handleInputChange}
-              className="peer h-32 w-full border border-gray-300 rounded-md text-gray-900 placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 resize-none"
+              className="peer h-32 w-full bg-gray-800 border-gray-700 text-white placeholder-transparent focus:outline-none focus:border-blue-600 focus:ring-1 focus:ring-blue-600 resize-none"
               placeholder="Message"
               required
             />
             <Label
               htmlFor="message"
-              className="absolute left-2 -top-2.5 bg-white px-1 text-sm text-gray-600 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
+              className="absolute left-2 -top-2.5 bg-gray-900 px-1 text-sm text-gray-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-4 peer-focus:-top-2.5 peer-focus:text-sm peer-focus:text-blue-600"
             >
               Message
             </Label>

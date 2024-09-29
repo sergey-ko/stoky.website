@@ -27,16 +27,16 @@ const faqItems = [
 
 export function AIFAQ() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-white">Frequently Asked Questions</h2>
         <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto space-y-4">
           {faqItems.map((item, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg">
-              <AccordionTrigger className="flex items-center justify-between w-full p-4 hover:bg-gray-50">
+            <AccordionItem key={index} value={`item-${index}`} className="border border-gray-700 rounded-lg">
+              <AccordionTrigger className="flex items-center justify-between w-full p-4 hover:bg-gray-800 text-white">
                 <span className="font-semibold text-left">{item.question}</span>               
               </AccordionTrigger>
-              <AccordionContent className="p-4 text-gray-600">
+              <AccordionContent className="p-4 text-gray-300">
                 {item.answer}
               </AccordionContent>
             </AccordionItem>

@@ -31,23 +31,23 @@ const benefits = [
 
 export function AIBenefits() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Key Benefits of Our AI Assistant</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-white">Why Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
             <Card 
               key={index} 
-              className="bg-white border border-gray-200 shadow-sm hover:shadow-lg hover:border-blue-300 transition-all duration-300"
+              className="bg-gray-800 border-gray-700 shadow-md hover:shadow-lg hover:border-blue-600 transition-all duration-300"
             >
               <CardHeader className="p-6">
-                <div className="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
-                  <benefit.icon className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-blue-900 rounded-full flex items-center justify-center">
+                  <benefit.icon className="w-8 h-8 text-blue-400" />
                 </div>
-                <CardTitle className="text-2xl font-semibold text-center mb-2">{benefit.title}</CardTitle>
+                <CardTitle className="text-2xl font-semibold text-center mb-2 text-white">{benefit.title}</CardTitle>
               </CardHeader>
               <CardContent className="px-6 pb-6">
-                <p className="text-gray-600 text-center">{benefit.description}</p>
+                <p className="text-gray-300 text-center">{benefit.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -24,27 +24,27 @@ const processSteps = [
 
 export function AIProcess() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Our AI Development Process</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-white">Our AI Development Process</h2>
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-4">
           {processSteps.map((step, index) => (
             <div key={index} className="flex flex-col items-center w-full md:w-1/3">
-              <Card className="w-full bg-gray-50 hover:bg-blue-50 transition-colors duration-300 shadow-md hover:shadow-xl">
+              <Card className="w-full bg-gray-800 hover:bg-gray-700 transition-colors duration-300 shadow-md hover:shadow-xl">
                 <CardHeader className="text-center">
                   <div className="mb-6 flex justify-center">
-                    <step.icon className="w-24 h-24 text-blue-600" />
+                    <step.icon className="w-24 h-24 text-blue-400" />
                   </div>
-                  <CardTitle className="text-2xl font-bold mb-2">{step.title}</CardTitle>
-                  <p className="text-sm font-semibold text-blue-600">{step.duration}</p>
+                  <CardTitle className="text-2xl font-bold mb-2 text-white">{step.title}</CardTitle>
+                  <p className="text-sm font-semibold text-blue-400">{step.duration}</p>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600 text-lg leading-relaxed">{step.description}</p>
+                  <p className="text-gray-300 text-lg leading-relaxed">{step.description}</p>
                 </CardContent>
               </Card>
               {index < processSteps.length - 1 && (
-                <div className="hidden md:block w-full h-2 bg-blue-200 my-4 relative">
-                  <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-600 rounded-full"></div>
+                <div className="hidden md:block w-full h-2 bg-gray-700 my-4 relative">
+                  <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-blue-400 rounded-full"></div>
                 </div>
               )}
             </div>
