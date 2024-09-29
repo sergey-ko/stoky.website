@@ -55,9 +55,12 @@ export function PlatformCards() {
   return (
     <section className="py-24 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900 dark:text-white drop-shadow-md">
+        <h2 className="text-5xl font-extrabold text-center mb-8 text-gray-900 dark:text-white drop-shadow-md">
           Explore Ways to Use Our AI
         </h2>
+        <h3 className="text-2xl font-semibold text-center mb-16 text-gray-700 dark:text-gray-300">
+          More then one platform to choose from
+        </h3>
         <div className="space-y-16">
           {platforms.map((platform, index) => (
             <div key={index} className={`flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} ${theme === 'dark' ? 'bg-gray-800' : platform.color} rounded-lg overflow-hidden shadow-lg`}>
@@ -98,18 +101,30 @@ export function PlatformCards() {
                     </li>
                   ))}
                 </ul>
-                <PlatformButton
-                  cta={platform.cta}
-                  ctaLink={platform.ctaLink}
-                  buttonColor={platform.buttonColor}
-                />
+                <div className="w-48"> {/* Add this wrapper div with a fixed width */}
+                  <PlatformButton
+                    cta={platform.cta}
+                    ctaLink={platform.ctaLink}
+                    buttonColor={platform.buttonColor}
+                  />
+                </div>
               </div>
-              <div className="md:w-1/2 h-64 md:h-auto relative">
+              <div className="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
                 {platform.name === "Studio" ? (
-                  <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700">
-                    <span className="text-3xl font-bold text-gray-600 dark:text-gray-300">
-                      Coming Soon
-                    </span>
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-400 to-indigo-600 dark:from-purple-600 dark:to-indigo-800">
+                    <div className="text-center">
+                      <span className="text-4xl font-bold text-white mb-4 block animate-pulse">
+                        Coming Soon
+                      </span>
+                      <span className="text-xl text-purple-100 dark:text-purple-200 block">
+                        Get ready for something amazing!
+                      </span>
+                      <div className="mt-6 animate-bounce">
+                        <svg className="w-10 h-10 mx-auto text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 ) : (
                   <Image
