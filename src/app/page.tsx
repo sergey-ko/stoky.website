@@ -20,7 +20,10 @@ export default function Home() {
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+    if (theme === 'system' || theme === 'light') {
+      setTheme('dark')
+    }
+  }, [theme, setTheme])
 
   if (!mounted) return null
 
