@@ -15,6 +15,7 @@ const plans = [
     cta: "Talk to Stoky GPT Now",
     color: "bg-green-100",
     buttonColor: "bg-green-600 hover:bg-gray-700",
+    action: "https://chatgpt.com/g/g-pK2vbuchD-stoky",
   },
   {
     name: "Starter",
@@ -26,10 +27,11 @@ const plans = [
       "Strategy optimization",
       "Priority support"
     ],
-    cta: "Buy Now",
-    color: "bg-blue-100",
+    cta: "Drop Us a Line",
+    color: "bg-gray-100",
     buttonColor: "bg-blue-600 hover:bg-blue-700",
-    popular: true,
+    popular: false,
+    comingSoon: true,
   },
   {
     name: "Pro",
@@ -38,9 +40,9 @@ const plans = [
       "All Starter features",
       "Stoky-Studio",
     ],
-    cta: "Join Waitlist",
+    cta: "Drop Us a Line",
     color: "bg-gray-100",
-    buttonColor: "bg-gray-600 hover:bg-blue-700",
+    buttonColor: "bg-blue-600 hover:bg-blue-700",
     comingSoon: true,
   },
 //  {
@@ -75,8 +77,17 @@ const plans = [
 export function SubscriptionPlans() {
   const { theme } = useTheme()
 
+  const handleButtonClick = (action: string) => {
+    if (action.startsWith('http')) {
+      window.open(action, '_blank')
+    } else {
+      // Handle other actions if needed
+      console.log(`Action: ${action}`)
+    }
+  }
+
   return (
-    <section className="py-24 bg-white dark:bg-gray-900">
+    <section className="py-24 bg-white dark:bg-gray-900" id="subscription-plans">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-extrabold text-center mb-8 text-gray-900 dark:text-white drop-shadow-md">
           Subscription Plans
@@ -113,7 +124,10 @@ export function SubscriptionPlans() {
                   </li>
                 ))}
               </ul>
-              <Button className={`w-full ${plan.buttonColor} text-lg font-semibold`}>
+              <Button 
+                className={`w-full ${plan.buttonColor} text-lg font-semibold`}
+                onClick={() => handleButtonClick(plan.action || "https://www.linkedin.com/company/stokyai/")}
+              >
                 {plan.cta}
               </Button>
             </div>

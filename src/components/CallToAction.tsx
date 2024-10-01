@@ -13,9 +13,10 @@ export function CallToAction() {
           variant="secondary" 
           className={`${theme === 'dark' ? 'bg-gray-800 text-white hover:bg-gray-700' : 'bg-white text-blue-600 hover:bg-blue-100'} transform hover:scale-105 transition-all duration-200 shadow-lg`}
         >
-          Start Free Trial
+          Talk to Stoky GPT now*
         </Button>
       </div>
+      <p className="text-sm text-center mt-4">*You need to have OpenAI subscription to use Stoky</p>
     </section>
   )
 }

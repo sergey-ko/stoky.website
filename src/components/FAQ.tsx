@@ -16,10 +16,10 @@ const faqs = [
     question: "How does the backtesting feature work?",
     answer: "Our backtesting feature allows you to test your trading strategies against historical market data. You can input your strategy parameters, and the system will simulate how your strategy would have performed in past market conditions. This helps you refine your approach before risking real capital.",
   },
-  {
-    question: "Is this platform suitable for beginners?",
-    answer: "Yes, our platform is designed to cater to traders of all experience levels. For beginners, we offer educational resources, a user-friendly interface, and access to community-driven best practices. As you grow more experienced, you can leverage more advanced features to enhance your trading strategies.",
-  },
+  // {
+  //   question: "Is this platform suitable for beginners?",
+  //   answer: "Yes, our platform is designed to cater to traders of all experience levels. For beginners, we offer educational resources, a user-friendly interface, and access to community-driven best practices. As you grow more experienced, you can leverage more advanced features to enhance your trading strategies.",
+  // },
   {
     question: "Can I customize the real-time alerts?",
     answer: "Absolutely! Our real-time alert system is highly customizable. You can set specific criteria for price movements, technical indicators, or market events that you want to be notified about. This ensures you receive alerts that are most relevant to your trading style and goals.",

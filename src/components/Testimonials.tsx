@@ -27,11 +27,14 @@ export function Testimonials() {
   const { theme } = useTheme()
 
   return (
-    <section className="py-24 bg-gray-50 dark:bg-gray-800">
+    <section className="py-24 bg-gray-50 dark:bg-gray-800" id="testimonials">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900 dark:text-white drop-shadow-md">
+        <h2 className="text-5xl font-extrabold text-center mb-8 text-gray-900 dark:text-white drop-shadow-md">
           What Our Users Are Saying
         </h2>
+        <h3 className="text-2xl font-semibold text-center mb-16 text-gray-700 dark:text-gray-300">
+          "Real stories from real people who tried Stoky and changed their trading forever."
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-white dark:bg-gray-700 hover:shadow-xl transition-shadow duration-300">

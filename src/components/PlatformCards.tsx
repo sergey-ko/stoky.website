@@ -14,7 +14,7 @@ const platforms = [
       "AI-powered analysis",
     ],
     cta: "Try Stoky-GPT",
-    ctaLink: "/free-trial",
+    ctaLink: "https://chatgpt.com/g/g-pK2vbuchD-stoky",
     color: "bg-blue-100",
     buttonColor: "bg-blue-600 hover:bg-blue-700",
   },
@@ -28,7 +28,7 @@ const platforms = [
       "Telegram integration",
     ],
     cta: "View Subscription Plans",
-    ctaLink: "#pricing",
+    ctaLink: "#subscription-plans",
     color: "bg-green-100",
     buttonColor: "bg-green-600 hover:bg-green-700",
   },
@@ -43,7 +43,7 @@ const platforms = [
     ],
     comingSoon: true,
     cta: "Join Waitlist",
-    ctaLink: "/waitlist",
+    ctaLink: "https://www.linkedin.com/company/stokyai/",
     color: "bg-purple-100",
     buttonColor: "bg-purple-600 hover:bg-purple-700",
   },
@@ -59,7 +59,7 @@ export function PlatformCards() {
           Explore Ways to Use Our AI
         </h2>
         <h3 className="text-2xl font-semibold text-center mb-16 text-gray-700 dark:text-gray-300">
-          More then one platform to choose from
+          Choose the one that best fits your needs
         </h3>
         <div className="space-y-16">
           {platforms.map((platform, index) => (

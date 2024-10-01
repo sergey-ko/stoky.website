@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { useTheme } from 'next-themes'
 import YouTube from 'react-youtube'
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
 export function Hero() {
   const { theme } = useTheme()
@@ -41,10 +42,13 @@ export function Hero() {
                 ? 'from-yellow-500 to-orange-600 text-gray-900 hover:from-yellow-600 hover:to-orange-700' 
                 : 'from-yellow-400 to-orange-500 text-blue-900 hover:from-yellow-500 hover:to-orange-600'
             } transform hover:scale-105 transition-all duration-200 shadow-lg`}
+            onClick={() => window.open('https://chatgpt.com/g/g-pK2vbuchD-stoky', '_blank')}
           >
-            Try Stoky-GPT
-          </Button>          
-        </div>
+            <ArrowTopRightOnSquareIcon className="w-5 h-5 mr-2" />
+            Try Stoky-GPT*
+          </Button>
+        </div> 
+        <p className="text-sm text-center mt-4">*You need OpenAI account to use this</p>
       </div>
     </section>
   )
