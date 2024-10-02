@@ -1,4 +1,11 @@
 import React from 'react';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Stoky",
+  description: "Privacy Policy for Stoky AI",
+};
+
 
 const PrivacyPolicyPage: React.FC = () => {
   return (
