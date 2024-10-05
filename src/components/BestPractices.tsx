@@ -27,10 +27,10 @@ export function BestPractices() {
     <section className="py-24 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-extrabold text-center mb-8 text-gray-900 dark:text-white drop-shadow-md">
-          Let Data Drive Your Trading
+          The 3-Step Trading Blueprint
         </h2>
         <h3 className="text-2xl font-semibold text-center mb-16 text-gray-700 dark:text-gray-300">
-          No more second-guessing, no more blindspots, just data-backed decisions.
+          Data, ideas, action
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {practices.map((practice, index) => (

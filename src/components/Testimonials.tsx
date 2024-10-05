@@ -33,7 +33,7 @@ export function Testimonials() {
           What Our Users Are Saying
         </h2>
         <h3 className="text-2xl font-semibold text-center mb-16 text-gray-700 dark:text-gray-300">
-          "Real stories from real people who tried Stoky and changed their trading forever."
+          Real stories from real people who tried Stoky and changed their trading forever.
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

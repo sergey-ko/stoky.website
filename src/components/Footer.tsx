@@ -11,8 +11,8 @@ export function Footer() {
       <div className="container mx-auto px-4">
          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-xl font-semibold mb-4">AI Trading Assistant</h3>
-            <p className="text-sm text-gray-400">Empowering traders with AI-driven insights and tools.</p>
+            <h3 className="text-xl font-semibold mb-4">Trading Assistant</h3>
+            <p className="text-sm text-gray-400">Empowering traders with Quant insights and tools.</p>
           </div>
           <div>
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
