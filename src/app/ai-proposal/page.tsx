@@ -39,14 +39,15 @@ export default function AIDataAccessPage() {
       {/* <AIPainPoints /> */}
       <AIAssistantArchitecture />
       <AIProcess />
-      <AIFinalSolution />
-      <AIWhyUs />
+      {/* <AIFinalSolution /> */}
       <AIPricingPlans />
+      <AIWhyUs />
+      
       {/* <AIPartnerships /> */}
       {/* <AITestimonial /> */}
       <AIFAQ />
       <AICallToAction />
-      <AIContactForm />
+      {/* <AIContactForm /> */}
       <Footer />
     </div>
   );

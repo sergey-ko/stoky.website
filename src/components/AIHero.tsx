@@ -3,6 +3,12 @@ import Image from 'next/image'
 import { FaChartLine, FaCogs, FaExpandArrowsAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
+const FEATURE_CARDS = [
+  { icon: FaChartLine, text: "Extract actionable insights effortlessly", color: "text-blue-400" },
+  { icon: FaCogs, text: "Empower your team without technical AI expertise", color: "text-green-400" },
+  { icon: FaExpandArrowsAlt, text: "Scale data analysis across your organization seamlessly", color: "text-yellow-400" }
+];
+
 export function AIHero() {
   console.log("AIHero component is rendering");
 
@@ -25,7 +31,7 @@ export function AIHero() {
           transition={{ duration: 0.8 }}
           className="text-7xl font-extrabold mb-6 leading-tight"
         >
-          Unlock Your Data with a Custom AI Assistant
+          Unlock Your Data
         </motion.h1>
         <motion.h2 
           initial={{ opacity: 0 }}
@@ -33,16 +39,8 @@ export function AIHero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-3xl font-light mb-10"
         >
-          A 6-Month Program to Build an AI Assistant Tailored for Your Data Access Challenges
+          6-Month Program to Build Your AI Assistant by Your Team
         </motion.h2>
-        <div className="flex justify-center space-x-4 mb-16">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 text-xl rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-          >
-            <a href="#contact">Start Your Data Journey Today</a>
-          </Button>          
-        </div>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -51,18 +49,22 @@ export function AIHero() {
         >
           Discover how our tailored AI assistant addresses your data challenges:
         </motion.p>
-        <div className="flex justify-center space-x-8">
-          {[
-            { icon: FaChartLine, text: "Extract actionable insights effortlessly", color: "text-blue-400" },
-            { icon: FaCogs, text: "Empower your team without technical AI expertise", color: "text-green-400" },
-            { icon: FaExpandArrowsAlt, text: "Scale data analysis across your organization seamlessly", color: "text-yellow-400" }
-          ].map((item, index) => (
+        <div className="flex justify-center space-x-4 mb-16">
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white px-8 py-4 text-xl rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+          >
+            <a href="#contact">Start Your Data Journey Today</a>
+          </Button>          
+        </div>        
+        <div className="flex flex-col md:flex-row justify-center md:space-x-8 space-y-8 md:space-y-0">
+          {FEATURE_CARDS.map((item, index) => (
             <motion.div 
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 + index * 0.2 }}
-              className="flex flex-col items-center max-w-xs bg-black/30 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="flex flex-col items-center max-w-xs mx-auto md:mx-0 bg-black/30 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <item.icon className={`text-5xl mb-4 ${item.color}`} />
               <p className="text-xl">{item.text}</p>

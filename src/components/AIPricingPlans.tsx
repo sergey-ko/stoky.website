@@ -65,7 +65,10 @@ export function AIPricingPlans() {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-900 to-black">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center mb-16 text-white">Choose Your Option</h2>
+        <h2 className="text-5xl font-extrabold text-center mb-16 text-white">Choose Your Option</h2>
+        <p className="text-2xl text-center mb-16 text-gray-100">
+          
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {pricingPlans.map((plan, index) => (
             <Card key={index} className={`bg-gray-800 ${plan.popular ? 'ring-2 ring-blue-500' : ''} flex flex-col`}>
@@ -88,13 +91,13 @@ export function AIPricingPlans() {
                   {plan.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-center text-gray-200">
                       <svg className="w-6 h-6 mr-3 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                      <span className="text-lg">{feature}</span>
+                      <span className="text-xl">{feature}</span>
                     </li>
                   ))}
                   {plan.negativeFeatures && plan.negativeFeatures.map((feature, fIndex) => (
                     <li key={`neg-${fIndex}`} className="flex items-center text-gray-200">
                       <svg className="w-6 h-6 mr-3 text-red-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
-                      <span className="text-lg">{feature}</span>
+                      <span className="text-xl">{feature}</span>
                     </li>
                   ))}
                 </ul>

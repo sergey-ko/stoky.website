@@ -30,9 +30,9 @@ export function AIFAQ() {
   const { theme } = useTheme()
 
   return (
-    <section className="py-24 bg-white dark:bg-gray-900">
+    <section className="py-24 bg-gradient-to-br from-gray-900 to-black">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-extrabold text-center mb-16 text-gray-900 dark:text-white drop-shadow-md">
+        <h2 className="text-5xl font-extrabold text-center mb-16 text-gray-900 dark:text-white drop-shadow-md">
           Frequently Asked Questions
         </h2>
         <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto">
