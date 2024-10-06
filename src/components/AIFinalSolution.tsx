@@ -31,6 +31,7 @@ export function AIFinalSolution() {
     <section className="py-24 bg-gradient-to-b from-gray-900 to-black">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16 text-white">Results in 6 months</h2>
+        <p className="text-2xl text-center mb-16 text-gray-100">MVP, Team, Processes</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {solutionFeatures.map((feature, index) => (
             <Card key={index} className="bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">

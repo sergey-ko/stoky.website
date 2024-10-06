@@ -14,6 +14,9 @@ import {AIPartnerships} from '@/components/AIPartnerships';
 import {AITestimonial} from '@/components/AITestimonial';
 import {AIFAQ} from '@/components/AIFAQ';
 import {AIContactForm} from '@/components/AIContactForm';
+import AICallToAction from '@/components/AICallToAction';
+import {Footer} from '@/components/Footer';
+import AIAssistantArchitecture from '@/components/AIAssistantArchitecture';
 
 export default function AIDataAccessPage() {
 
@@ -33,7 +36,8 @@ export default function AIDataAccessPage() {
     <div className="min-h-screen bg-background">
       <AIHero />
       {/* <AIShowcase /> */}
-      <AIPainPoints />
+      {/* <AIPainPoints /> */}
+      <AIAssistantArchitecture />
       <AIProcess />
       <AIFinalSolution />
       <AIWhyUs />
@@ -41,7 +45,9 @@ export default function AIDataAccessPage() {
       {/* <AIPartnerships /> */}
       {/* <AITestimonial /> */}
       <AIFAQ />
+      <AICallToAction />
       <AIContactForm />
+      <Footer />
     </div>
   );
 }
