@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/common/button"
 import Image from 'next/image'
 import { FaChartLine, FaCogs, FaExpandArrowsAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'

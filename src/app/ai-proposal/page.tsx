@@ -3,20 +3,20 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
-import {AIHero} from '@/components/AIHero';
-import {AIShowcase} from '@/components/AIShowcase';
-import {AIPainPoints} from '@/components/AIPainPoints';
-import {AIProcess} from '@/components/AIProcess';
-import {AIFinalSolution} from '@/components/AIFinalSolution';
-import {AIWhyUs} from '@/components/AIBenefits';
-import {AIPricingPlans} from '@/components/AIPricingPlans';
-import {AIPartnerships} from '@/components/AIPartnerships';
-import {AITestimonial} from '@/components/AITestimonial';
-import {AIFAQ} from '@/components/AIFAQ';
-import {AIContactForm} from '@/components/AIContactForm';
-import AICallToAction from '@/components/AICallToAction';
-import {Footer} from '@/components/Footer';
-import AIAssistantArchitecture from '@/components/AIAssistantArchitecture';
+import { AIHero } from '@/components/hero/AIHero';
+import { AIShowcase } from '@/components/features/ai-proposal/AIShowcase';
+import { AIPainPoints } from '@/components/features/ai-proposal/AIPainPoints';
+import { AIProcess } from '@/components/features/ai-proposal/AIProcess';
+import { AIFinalSolution } from '@/components/features/ai-proposal/AIFinalSolution';
+import { AIWhyUs } from '@/components/features/ai-proposal/AIBenefits';
+import { AIPricingPlans } from '@/components/features/pricing/AIPricingPlans';
+import { AIPartnerships } from '@/components/features/ai-proposal/AIPartnerships';
+import { AITestimonial } from '@/components/features/ai-proposal/AITestimonial';
+import { AIFAQ } from '@/components/info/AIFAQ';
+import { AIContactForm } from '@/components/features/ai-proposal/AIContactForm';
+import AICallToAction from '@/components/features/marketing/AICallToAction';
+import { Footer } from '@/components/ui/layout/Footer';
+import AIAssistantArchitecture from '@/components/features/ai-proposal/AIAssistantArchitecture';
 
 export default function AIDataAccessPage() {
 

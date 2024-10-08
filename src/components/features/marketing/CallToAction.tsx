@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/common/button"
 import { useTheme } from 'next-themes'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 

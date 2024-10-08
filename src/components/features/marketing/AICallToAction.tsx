@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/common/button"
 import { useTheme } from 'next-themes'
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 import { FaEnvelope, FaTelegram } from 'react-icons/fa'
@@ -15,7 +15,7 @@ export default function AICombinedSection() {
   }
 
   return (
-    <section className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-gray-950 dark:to-blue-950 text-white py-24">
+    <section className="bg-gradient-to-br from-gray-900 to-blue-900 dark:from-gray-950 dark:to-blue-950 text-white py-24" id="contact">
       <div className="container mx-auto text-center px-4">
         <h2 className="text-5xl font-extrabold text-center mb-6 text-white drop-shadow-lg">
           AI Assistant in Action!

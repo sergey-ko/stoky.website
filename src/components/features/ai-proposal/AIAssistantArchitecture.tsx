@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLightbulb, FaCode, FaDatabase, FaDesktop, FaCogs, FaUsers, FaBook } from 'react-icons/fa'
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/common/card"
 
 const architecturePoints = [
   { 

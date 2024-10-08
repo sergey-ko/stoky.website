@@ -1,6 +1,6 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/common/card"
 import { Bot, Brain, Workflow, Users } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/common/button"
 
 const solutionFeatures = [
   {

@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/common/card"
 import { Sliders, LineChart, Scale, Zap, Database, Target, Lightbulb, TrendingUp, Users } from "lucide-react"
 
 const expertise = [

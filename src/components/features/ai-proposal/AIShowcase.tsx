@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/common/button"
+import { Card } from "@/components/ui/common/card"
 import { FaChartBar, FaCog, FaClock } from 'react-icons/fa'
 
 export function AIShowcase() {

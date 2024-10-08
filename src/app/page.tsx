@@ -1,15 +1,15 @@
 "use client"
 
-import { Hero } from "@/components/Hero"
-import { Features } from "@/components/Features"
-import { RealTimeData } from "@/components/RealTimeData"
-import { BestPractices } from "@/components/BestPractices"
-import { SubscriptionPlans } from "@/components/SubscriptionPlans"
-import { PlatformCards } from "@/components/PlatformCards"
-import { Testimonials } from "@/components/Testimonials"
-import { CallToAction } from "@/components/CallToAction"
-import { FAQ } from "@/components/FAQ"
-import { Footer } from "@/components/Footer"
+import { Hero } from "@/components/hero/Hero"
+import { Features } from "@/components/features/sections/Features"
+import { RealTimeData } from "@/components/features/sections/RealTimeData"
+import { BestPractices } from "@/components/features/sections/BestPractices"
+import { SubscriptionPlans } from "@/components/features/pricing/SubscriptionPlans"
+import { PlatformCards } from "@/components/features/sections/PlatformCards"
+import { Testimonials } from "@/components/features/sections/Testimonials"
+import { CallToAction } from "@/components/features/marketing/CallToAction"
+import { FAQ } from "@/components/info/FAQ"
+import { Footer } from "@/components/ui/layout/Footer"
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 

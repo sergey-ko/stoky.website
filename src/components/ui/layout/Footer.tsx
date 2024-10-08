@@ -1,5 +1,5 @@
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/common/input"
+import { Button } from "@/components/ui/common/button"
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
 import { useTheme } from 'next-themes'
 

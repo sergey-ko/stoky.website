@@ -1,6 +1,6 @@
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/common/card"
+import { Button } from "@/components/ui/common/button"
+import { Badge } from "@/components/ui/common/badge"
 
 const pricingPlans = [
   {

@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/common/accordion"
 import { HelpCircle } from "lucide-react"
 import { useTheme } from 'next-themes'
 

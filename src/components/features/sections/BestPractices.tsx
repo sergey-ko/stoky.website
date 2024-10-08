@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/common/card"
 import { Users, LineChart, RefreshCw } from "lucide-react"
 import { useTheme } from 'next-themes'
 

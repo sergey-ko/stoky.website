@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/common/card"
 import { Lightbulb, Code, Cog, ChevronRight, Check } from "lucide-react"
 
 const processSteps = [

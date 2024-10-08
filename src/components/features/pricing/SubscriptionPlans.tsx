@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/common/button"
 import { Check } from "lucide-react"
 import { useTheme } from 'next-themes'
 

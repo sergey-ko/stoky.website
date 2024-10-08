@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/common/card"
 
 const painPoints = [
   "Do your teams struggle to extract actionable insights from data?",

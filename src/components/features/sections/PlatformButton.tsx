@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/common/button";
 import { useTheme } from 'next-themes';
 
 interface PlatformButtonProps {
