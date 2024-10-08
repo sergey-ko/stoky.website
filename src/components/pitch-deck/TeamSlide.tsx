@@ -3,8 +3,6 @@ import Image from 'next/image';
 
 const TeamSlide: React.FC = () => {
   return (
-    <div className="bg-slide-bg p-8 rounded-lg h-full flex flex-col justify-center">
-      <h2 className="text-3xl font-bold mb-8 text-center text-pitch-primary">Experienced Team with Deep Expertise</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="text-center">
           <Image
@@ -40,7 +38,6 @@ const TeamSlide: React.FC = () => {
           <p>Managed multi-million dollar portfolios. Quant expert.</p>
         </div>
       </div>
-    </div>
   );
 };
 

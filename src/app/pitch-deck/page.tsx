@@ -13,7 +13,8 @@ import GoToMarketSlide from '@/components/pitch-deck/GoToMarketSlide';
 import TeamSlide from '@/components/pitch-deck/TeamSlide';
 import FinancialProjectionsSlide from '@/components/pitch-deck/FinancialProjectionsSlide';
 import AskSlide from '@/components/pitch-deck/AskSlide';
-
+import Slide from '@/components/pitch-deck/slide';
+import IntroSlide from '@/components/pitch-deck/Intro';
 const PitchDeckPage: React.FC = () => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
@@ -28,24 +29,29 @@ const PitchDeckPage: React.FC = () => {
   if (!mounted) return null
 
   const slides = [
-    ProblemSlide, SolutionSlide, MarketOpportunitySlide, ProductSlide,
-    BusinessModelSlide, TractionSlide, GoToMarketSlide, TeamSlide,
-    FinancialProjectionsSlide, AskSlide
+    { title: "Intro", Content: IntroSlide },
+    { title: "Current Trading Platforms Stuck in 90s", Content: ProblemSlide },
+    { title: "Bridging the Gap between Graph and Quant Platforms", Content: SolutionSlide },
+    { title: "Tap into a Multi-Billion-Dollar Market", Content: MarketOpportunitySlide },
+    { title: "Simple, yet powerful trading tool", Content: ProductSlide },
+    { title: "Subscription based revenue model", Content: BusinessModelSlide },
+    { title: "Growing user base with strong retention", Content: TractionSlide },
+    { title: "Targeting retail traders and hobby quants", Content: GoToMarketSlide },
+    { title: "Experienced Team With Deep Expertise", Content: TeamSlide },
+    { title: "Strong revenue growth potential", Content: FinancialProjectionsSlide },
+    { title: "Join Us in Revolutionizing Trading", Content: AskSlide }
   ];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <main className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-8 text-center text-pitch-primary">Pitch Deck</h1>
+      <main className="container mx-auto py-8">
+        {/* <h1 className="text-4xl font-bold mb-8 text-center text-pitch-primary">Pitch Deck</h1> */}
         <div className="space-y-16">
-          {slides.map((Slide, index) => (
-            <div key={index} className="aspect-[16/9] w-[90%] mx-auto bg-gray-800 rounded-lg">
-              <Slide />
-            </div>
+          {slides.map(({ title, Content }, index) => (
+            <Slide key={index} title={title} content={<Content />} />
           ))}
         </div>
       </main>
-      {/* <Footer /> */}
     </div>
   );
 }

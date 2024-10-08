@@ -1,6 +1,7 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import SlideHeader from './SlideHeader';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -40,8 +41,6 @@ const TractionSlide: React.FC = () => {
   };
 
   return (
-    <section className="bg-slide-bg p-8 rounded-lg h-full flex flex-col justify-center">
-      <h2 className="text-3xl font-bold mb-8 text-center text-pitch-primary">Growing User Base and Strong Engagement</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-xl font-semibold mb-2 text-pitch-secondary">User Growth</h3>
@@ -57,7 +56,6 @@ const TractionSlide: React.FC = () => {
           </blockquote>
         </div>
       </div>
-    </section>
   );
 };
 

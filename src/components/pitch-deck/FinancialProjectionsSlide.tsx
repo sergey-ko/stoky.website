@@ -30,8 +30,6 @@ const FinancialProjectionsSlide: React.FC = () => {
   };
 
   return (
-    <section className="bg-gray-800 p-8 rounded-lg">
-      <h2 className="text-3xl font-bold mb-4">Strong Revenue Growth Potential</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-xl font-semibold mb-2">Revenue Projections</h3>
@@ -46,8 +44,7 @@ const FinancialProjectionsSlide: React.FC = () => {
             <li>Break-even point: Year 2</li>
           </ul>
         </div>
-      </div>
-    </section>
+    </div>
   );
 };
 

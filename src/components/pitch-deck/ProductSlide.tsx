@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import SlideHeader from './SlideHeader';
 
 const ProductSlide: React.FC = () => {
   return (
-    <div className="bg-slide-bg p-8 rounded-lg h-full flex flex-col justify-center">
-      <h2 className="text-3xl font-bold mb-8 text-center text-pitch-primary">Simplified Yet Powerful Trading Tools</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-xl font-semibold mb-2 text-pitch-secondary">Strategy Studio</h3>
@@ -46,7 +45,6 @@ const ProductSlide: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
