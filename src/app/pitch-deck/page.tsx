@@ -39,7 +39,7 @@ const PitchDeckPage: React.FC = () => {
         <h1 className="text-4xl font-bold mb-8 text-center text-pitch-primary">Pitch Deck</h1>
         <div className="space-y-16">
           {slides.map((Slide, index) => (
-            <div key={index} className="aspect-[16/9] w-full max-w-4xl mx-auto bg-gray-800 rounded-lg">
+            <div key={index} className="aspect-[16/9] w-[90%] mx-auto bg-gray-800 rounded-lg">
               <Slide />
             </div>
           ))}

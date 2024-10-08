@@ -2,23 +2,26 @@ import React from 'react';
 
 const GoToMarketSlide: React.FC = () => {
   return (
-    <section className="bg-gray-800 p-8 rounded-lg">
-      <h2 className="text-3xl font-bold mb-4">Targeting Retail Traders and Hobby Quants</h2>
-      <div className="space-y-4">
-        <div>
-          <h3 className="text-xl font-semibold mb-2">Phase 1</h3>
-          <p>Target active TradingView users and QuantConnect users through targeted ads, influencer campaigns, and partnerships with quant communities.</p>
+    <div className="bg-slide-bg p-8 rounded-lg h-full flex flex-col justify-center">
+      <h2 className="text-3xl font-bold mb-8 text-center text-pitch-primary">Targeting Retail Traders and Hobby Quants</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-pitch-secondary">Phase 1</h3>
+          <p>Influencer campaigns targeting QuantConnect and TradingView communities.</p>
+          {/* Existing content... */}
         </div>
-        <div>
-          <h3 className="text-xl font-semibold mb-2">Phase 2</h3>
-          <p>Expand to eToro-like users by showcasing deeper insights via our chat interface.</p>
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-pitch-secondary">Phase 2</h3>
+          <p>Launch chat-interface demo targeting non-technical traders on eToro.</p>
+          {/* Existing content... */}
         </div>
-        <div>
-          <h3 className="text-xl font-semibold mb-2">Phase 3</h3>
-          <p>Partner with trading influencers and forums like TradingView to promote our app.</p>
+        <div className="bg-gray-800 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-pitch-secondary">Phase 3</h3>
+          <p>Partnerships with trading platforms and brokerages to expand integrations.</p>
+          {/* Existing content... */}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

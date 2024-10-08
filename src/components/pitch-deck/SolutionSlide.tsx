@@ -8,7 +8,7 @@ const SolutionSlide: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <h3 className="text-xl font-semibold mb-2 text-pitch-secondary">Strategy Studio</h3>
-          <p>Combines the graphical power of TradingView with the flexibility of QuantConnect</p>
+          <p className="mb-2">No code, no hassle. Get started with automation easily.</p>
           <div className="mt-4 bg-gray-700 h-40 flex items-center justify-center">
             <Image
               src="/images/strategy-studio-mockup.png"
@@ -21,7 +21,7 @@ const SolutionSlide: React.FC = () => {
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-2 text-pitch-secondary">Chat Interface</h3>
-          <p>Simplified interface for non-coders and hobby quants to access deeper insights</p>
+          <p className="mb-2">Non-tech users get access to pro-level insights without learning complex tools.</p>
           <div className="mt-4 bg-gray-700 h-40 flex items-center justify-center">
             <Image
               src="/images/chat-interface-mockup.png"
