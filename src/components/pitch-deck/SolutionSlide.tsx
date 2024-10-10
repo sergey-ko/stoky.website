@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import SlideHeader from './SlideHeader';
 
 const SolutionSlide: React.FC = () => {
   return (

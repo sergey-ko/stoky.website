@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 
 interface SlideProps {
   content: ReactNode;
@@ -6,11 +6,22 @@ interface SlideProps {
 }
 
 const Slide: React.FC<SlideProps> = ({ title, content }) => {
+  useEffect(() => {
+    const styleElement = document.createElement('style');
+    styleElement.innerHTML = styles;
+    document.head.appendChild(styleElement);
+
+    return () => {
+      document.head.removeChild(styleElement);
+    };
+  }, []);
+
   return (
-    <div style={{
-      width: '85vw',
-      margin: '2rem auto', // Added vertical margin for spacing between slides
-      marginBottom: '4rem', // Increased bottom margin for more separation
+    <div className="slide-container" style={{
+      width: '100%',
+      maxWidth: '70vw',
+      margin: '2rem auto',
+      marginBottom: '4rem',
     }}>
       <div style={{
         position: 'relative',
@@ -48,5 +59,13 @@ const Slide: React.FC<SlideProps> = ({ title, content }) => {
     </div>
   );
 };
+
+const styles = `
+  @media (max-width: 768px) {
+    .slide-container {
+      max-width: 100% !important;
+    }
+  }
+`;
 
 export default Slide;
