@@ -1,46 +1,72 @@
 import React from 'react';
 
+const pricingPlans = [
+  {
+    name: "Free",
+    price: "$0",
+    features: [
+      "Daily Data Access",
+      "Analysis of Stocks, ETFs, and Crypto",
+      "Strategy backtesting",
+      "Email support",
+    ],
+    highlight: false,
+  },
+  {
+    name: "Starter",
+    price: "$99/month",
+    features: [
+      "All Free features",
+      "Access to minute data",
+      "Advanced backtesting",
+      "Strategy optimization",
+      "Priority support"
+    ],
+    highlight: false,
+  },
+  {
+    name: "Pro",
+    price: "$299/month",
+    features: [
+      "All Starter features",
+      "Stoky-Studio",
+    ],
+    highlight: false,
+    highlightText: "Coming Soon",
+  },
+  {
+    name: "Elite",
+    price: "Custom",
+    features: [
+      "Stoky-Studio",
+      "Your datasources",
+      "Customizable knowledge base",
+      "Integrations",
+      "On-premise deployment",
+    ],
+    highlight: false,
+  },
+];
+
 const BusinessModelSlide: React.FC = () => {
   return (
+    <div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div className="p-4 border border-gray-600 rounded">
-          <h3 className="text-xl font-semibold mb-2">Free Plan</h3>
-          <p className="text-2xl font-bold mb-2">$0</p>
-          <ul className="list-disc list-inside">
-            <li>Basic features</li>
-            <li>Backtesting</li>
-            <li>Technical analysis</li>
-          </ul>
-        </div>
-        <div className="p-4 border border-gray-600 rounded">
-          <h3 className="text-xl font-semibold mb-2">Expert Plan</h3>
-          <p className="text-2xl font-bold mb-2">$90/month</p>
-          <ul className="list-disc list-inside">
-            <li>Strategy optimization</li>
-            <li>Sector analysis</li>
-            <li>Advanced features</li>
-          </ul>
-        </div>
-        <div className="p-4 border border-gray-600 rounded bg-blue-900">
-          <h3 className="text-xl font-semibold mb-2">Pro Plan</h3>
-          <p className="text-2xl font-bold mb-2">$490/month</p>
-          <ul className="list-disc list-inside">
-            <li>Strategy finder</li>
-            <li>TMS integration</li>
-            <li>Background tasks</li>
-          </ul>
-          <p className="mt-2 font-bold">Best Value</p>
-        </div>
-        <div className="p-4 border border-gray-600 rounded">
-          <h3 className="text-xl font-semibold mb-2">Enterprise Plan</h3>
-          <p className="text-2xl font-bold mb-2">Custom</p>
-          <ul className="list-disc list-inside">
-            <li>On-premise deployment</li>
-            <li>Custom integrations</li>
-            <li>Dedicated support</li>
-          </ul>
-        </div>
+        {pricingPlans.map((plan, index) => (
+          <div key={index} className={`p-4 border border-gray-600 rounded ${plan.highlight ? 'bg-blue-900' : ''}`}>
+            <h3 className="pitch-deck-h3 mb-2">{plan.name}</h3>
+            <p className="text-2xl font-bold mb-2">{plan.price}</p>
+            <ul className="list-disc list-inside">
+              {plan.features.map((feature, featureIndex) => (
+                <li key={featureIndex}>{feature}</li>
+              ))}
+            </ul>
+            {plan.highlight && <p className="mt-2 font-bold">{plan.highlightText}</p>}
+          </div>
+        ))}
       </div>
+      {/* <p className="pitch-deck-paragraph">Projected User Base: Aiming for 320,000 to 850,000 users across segments.</p> */}
+    </div>
   );
 };
 

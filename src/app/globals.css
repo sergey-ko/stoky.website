@@ -32,6 +32,10 @@ body {
   .pitch-deck-h3 {
     @apply text-lg md:text-2xl lg:text-4xl sm:text-xl font-semibold leading-relaxed;
   }
+
+  .pitch-deck-title {
+    @apply text-lg md:text-2xl font-semibold leading-relaxed;
+  }
 }
 
 @layer base {

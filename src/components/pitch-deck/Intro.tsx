@@ -12,6 +12,10 @@ const IntroSlide: React.FC = () => {
         <p className="pitch-deck-paragraph">
           We're on a mission to revolutionize the way people trade by bridging the gap between Graph and Quant platforms.
         </p>
+
+        <p className="pitch-deck-paragraph">
+          Stoky is an AI-driven trading assistant crafted for active traders and quantitative analysts. It empowers users to optimize strategies, mitigate risks, and access real-time market insights through advanced data analysis.
+        </p>
       </div>
     </div>
   );
