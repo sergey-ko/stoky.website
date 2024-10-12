@@ -10,7 +10,8 @@ import {
   Legend,
   LogarithmicScale,
   LineElement,
-  PointElement
+  PointElement,
+  BarController
 } from 'chart.js';
 
 ChartJS.register(
@@ -22,7 +23,8 @@ ChartJS.register(
   Legend,
   LogarithmicScale,
   LineElement,
-  PointElement
+  PointElement,
+  BarController
 );
 
 const FinancialProjectionsSlide: React.FC = () => {
@@ -30,18 +32,19 @@ const FinancialProjectionsSlide: React.FC = () => {
     labels: ['2024', '2025', '2026', '2027'],
     datasets: [
       {
+        type: 'bar' as const,
         label: 'Projected Revenue (in millions)',
         data: [0.01, 5, 50, 250],
         backgroundColor: 'rgba(75, 192, 192, 0.6)',
         yAxisID: 'y',
       },
       {
+        type: 'line' as const,
         label: 'Projected Users',
         data: [100, 5000, 30000, 100000],
         backgroundColor: 'rgba(153, 102, 255, 0.6)',
         borderColor: 'rgba(153, 102, 255, 1)',
         yAxisID: 'y1',
-        type: 'line' as const,
         pointRadius: 5,
         pointHoverRadius: 8,
         borderWidth: 3,

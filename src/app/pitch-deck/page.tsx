@@ -1,5 +1,6 @@
 'use client'
 
+import '@/utils/chartConfig';
 import React from 'react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
@@ -15,13 +16,9 @@ import Slide from '@/components/pitch-deck/slide';
 import IntroSlide from '@/components/pitch-deck/Intro';
 import ContactsSlide from '@/components/pitch-deck/Contacts';
 import EmptySlide from '@/components/pitch-deck/EmptySlide';
-
-// Import new slides
 import ProblemPrpSlide from '@/components/pitch-deck/ProblemPrpSlide';
 import AskPrpSlide from '@/components/pitch-deck/AskPrpSlide';
 import CompetitiveLandscapeSlide from '@/components/pitch-deck/CompetitiveLandscapeSlide';
-
-// Import the new TargetAudienceSlide
 import TargetAudienceSlide from '@/components/pitch-deck/TargetAudienceSlide';
 
 const PitchDeckPage: React.FC = () => {
