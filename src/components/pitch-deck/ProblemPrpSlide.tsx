@@ -37,7 +37,7 @@ const problemStatements = [
 const ProblemPrpSlide: React.FC = () => {
   return (
     <div className="flex flex-col gap-8">
-      <h3 className="pitch-deck-h3">Common Obstacles Preventing Retail Traders from Achieving Consistent Results</h3>
+      <h3 className="pitch-deck-h3">Complexity and Emotions Undermine Retail Traders</h3>
       <ul className="space-y-6">
         {problemStatements.map((problem, index) => (
           <li key={index} className="flex items-start">

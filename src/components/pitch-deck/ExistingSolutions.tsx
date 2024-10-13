@@ -37,7 +37,7 @@ const existingSolutions = [
 const ExistingSolutionsSlide: React.FC = () => {
   return (
     <div className="flex flex-col gap-8">
-      <h3 className="pitch-deck-h3">Why Current Trading Platforms Don't Meet Retail Traders' Needs</h3>
+      <h3 className="pitch-deck-h3">Existing Platforms Are Inaccessible or Ineffective</h3>
       <ul className="space-y-6">
         {existingSolutions.map((solution, index) => (
           <li key={index} className="flex items-start">
