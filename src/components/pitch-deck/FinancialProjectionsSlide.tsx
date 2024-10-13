@@ -34,7 +34,7 @@ const FinancialProjectionsSlide: React.FC = () => {
       {
         type: 'bar' as const,
         label: 'Projected Revenue (in millions)',
-        data: [0.01, 5, 50, 250],
+        data: [0.01, 3, 20, 80],
         backgroundColor: 'rgba(75, 192, 192, 0.6)',
         yAxisID: 'y',
       },
@@ -97,7 +97,7 @@ const FinancialProjectionsSlide: React.FC = () => {
   return (
     <div className="flex flex-col md:flex-row gap-8 h-full">
       <div className="flex-1 flex flex-col">
-        <h3 className="pitch-deck-h3 mb-4">Revenue Projections</h3>
+        <p className="pitch-deck-paragraph mb-4 mt-4"><strong>Revenue Projections</strong></p>
         <div className="flex-grow relative">
           <div className="absolute inset-0">
             <Chart type="bar" data={chartData} options={chartOptions} />
@@ -105,17 +105,17 @@ const FinancialProjectionsSlide: React.FC = () => {
         </div>
       </div>
       <div className="flex-1 flex flex-col">
-        <h3 className="pitch-deck-h3 mb-4">Key Metrics</h3>
+        <p className="pitch-deck-paragraph mb-4 mt-4"><strong>Key Metrics</strong></p>
         <div className="space-y-2 flex-grow flex flex-col">
-          <p className="pitch-deck-paragraph">2025: $5 million revenue (5,000 users)</p>
-          <p className="pitch-deck-paragraph">2026: $50 million revenue (30,000 users)</p>
-          <p className="pitch-deck-paragraph">2027: $250 million revenue (100,000 users)</p>            
-          <p className="pitch-deck-paragraph"><strong>Break-even point:</strong> 2025 Q1-Q2</p>
+          <p className="pitch-deck-paragraph">2025: $3 million revenue (5,000 users)</p>
+          <p className="pitch-deck-paragraph">2026: $20 million revenue (30,000 users)</p>
+          <p className="pitch-deck-paragraph">2027: $80 million revenue (100,000 users)</p>            
         </div>
-        <h3 className="pitch-deck-h3 mb-4">Unit Economy</h3>
+        <p className="pitch-deck-paragraph mb-12 mt-12"><strong>Break-even point:</strong> 2025 Q1-Q2</p>
+        <p className="pitch-deck-paragraph mb-4"><strong>Plan Unit Economy</strong></p>
         <div className="space-y-2 flex-grow flex flex-col">
-          <p className="pitch-deck-paragraph"><strong>Infrastructure:</strong> 20-30% of subscription price</p>
-          <p className="pitch-deck-paragraph"><strong>User Acquisition:</strong> One monthly subscription price</p>
+          <p className="pitch-deck-paragraph">Infrastructure: 20-30% of subscription price</p>
+          <p className="pitch-deck-paragraph">User Acquisition: One monthly subscription price</p>
         </div>
       </div>
     </div>

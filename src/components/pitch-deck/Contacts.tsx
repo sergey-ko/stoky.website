@@ -4,7 +4,7 @@ import { FaEnvelope, FaGlobe, FaPhone, FaLinkedin, FaTelegram, FaYoutube } from 
 const ContactsSlide: React.FC = () => {
   return (
     <div className="space-y-6">
-      <h3 className="pitch-deck-h3">Partner with Stoky to transform the reatail trading landscape with  AI-powered insights.</h3>
+      <h3 className="pitch-deck-h3 mb-12">Partner with Stoky to transform the retail trading landscape with AI-powered Assistant.</h3>
       <ul className="space-y-4">
         <ContactItem icon={<FaEnvelope />} text="Email: sk@stoky.pro" link="mailto:sk@stoky.pro" />
         <ContactItem icon={<FaGlobe />} text="Website: stoky.pro" link="https://stoky.pro" />

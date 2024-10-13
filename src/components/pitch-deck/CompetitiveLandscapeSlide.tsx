@@ -1,7 +1,14 @@
 import React from 'react';
 
 
-const competitorData = [
+interface Competitor {
+  name: string;
+  description: string[];
+  icon: string;
+  features: Record<string, string>;
+}
+
+const competitorData: Competitor[] = [
   {
     name: "TradingView",
     description: [
@@ -12,8 +19,8 @@ const competitorData = [
     features: {
       "Graphical Analysis": "⭐⭐⭐⭐⭐",
       Usability: "⭐⭐⭐",
-      "AI Integration": "⭐",
-      "Strategy Tools": "⭐⭐⭐",
+      "AI": "⭐",
+      "Strategy": "⭐⭐⭐",
     }
   },
   {
@@ -26,8 +33,8 @@ const competitorData = [
     features: {
       "Graphical Analysis": "⭐⭐⭐",
       Usability: "⭐",
-      "AI Integration": "⭐⭐",
-      "Strategy Tools": "⭐⭐⭐⭐⭐",
+      "AI": "⭐⭐",
+      "Strategy": "⭐⭐⭐⭐⭐",
     }
   },
   {
@@ -40,8 +47,8 @@ const competitorData = [
     features: {
       "Graphical Analysis": "⭐⭐⭐⭐",
       Usability: "⭐⭐⭐⭐⭐",
-      "AI Integration": "⭐⭐",
-      "Strategy Tools": "⭐",
+      "AI": "⭐⭐",
+      "Strategy": "⭐",
     }
   },
   {
@@ -55,60 +62,45 @@ const competitorData = [
     features: {
       "Graphical Analysis": "⭐⭐",
       Usability: "⭐⭐⭐⭐⭐",
-      "AI Integration": "⭐⭐⭐⭐⭐",
-      "Strategy Tools": "⭐⭐⭐⭐⭐",
+      "AI": "⭐⭐⭐⭐⭐",
+      "Strategy": "⭐⭐⭐⭐⭐",
     }
   }
 ];
 
-const featureOrder = ["Graphical Analysis", "Usability", "AI Integration", "Strategy Tools"];
+// const featureOrder = ["Graphical Analysis", "Usability", "AI", "Strategy"];
+const featureOrder = ["Graphical Analysis", "AI", "Strategy"];
 
 // Updated component
 const CompetitiveLandscapePrpSlide: React.FC = () => {
   return (
-    <div className="space-y-6">     
-      
-      <div className="grid grid-cols-4 gap-2">
-        {competitorData.map((competitor, index) => (
-          <div key={index} className="bg-gray-800 p-4 rounded-lg flex flex-col items-center text-center">
-            <div className="w-24 h-24 mb-2 flex items-center justify-center">
-              <img src={competitor.icon} alt={`${competitor.name} icon`} className="max-w-full max-h-full object-contain" />
-            </div>
-            <h3 className="pitch-deck-h3 text-sm mb-2">{competitor.name}</h3>
+    <div className="grid gap-2">
+      <div className="grid grid-cols-6 gap-2 items-center bg-gray-700 p-2 rounded-t-lg">
+        <div className="pitch-deck-paragraph font-semibold">Competitor</div>
+        <div className="pitch-deck-paragraph font-semibold col-span-2">Description</div>
+        {featureOrder.map((feature, index) => (
+          <div key={index} className="pitch-deck-paragraph font-semibold  text-center">{feature}</div>
+        ))}
+      </div>
+
+      {competitorData.map((competitor: Competitor, index) => (
+        <div key={index} className="grid grid-cols-6 gap-2 items-center bg-gray-800 p-2">
+          <div className="flex items-center space-x-2">
+            {/* <img src={competitor.icon} alt={`${competitor.name} icon`} className="w-8 h-8 object-contain" /> */}
+            <p className="pitch-deck-paragraph">{competitor.name}</p>
+          </div>
+          <div className="col-span-2">
             {competitor.description.map((line, lineIndex) => (
               <p key={lineIndex} className="pitch-deck-paragraph">{line}</p>
             ))}
           </div>
-        ))}
-      </div>
-      
-      <div className="mt-6">
-        <h3 className="text-2xl font-semibold mb-4">Competitive Matrix</h3>
-        <table className="w-full border-collapse">
-          <thead>
-            <tr className="bg-gray-700">
-              <th className="border border-gray-600 p-2">Feature</th>
-              {competitorData.map((competitor, index) => (
-                <th key={index} className="border border-gray-600 p-2">{competitor.name}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {featureOrder.map((feature, rowIndex) => (
-              <tr key={rowIndex}>
-                <td className="border border-gray-600 p-2">{feature}</td>
-                {competitorData.map((competitor, cellIndex) => (
-                  <td key={cellIndex} className="border border-gray-600 p-2">
-                    {Object.entries(competitor.features).find(([key]) => 
-                      key.toLowerCase() === feature.toLowerCase()
-                    )?.[1] || ''}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+          {featureOrder.map((feature, featureIndex) => (
+            <div key={featureIndex} className="pitch-deck-paragraph text-center">
+              <span className="text-xs">{competitor.features[feature]}</span>
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };

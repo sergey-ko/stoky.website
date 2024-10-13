@@ -55,11 +55,11 @@ const TractionSlide: React.FC = () => {
   return (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <h3 className="pitch-deck-h3 mb-4">User Growth Projection</h3>
+          {/* <h3 className="pitch-deck-h3 mb-4">User Growth Projection</h3> */}
           <Line data={chartData} options={chartOptions} />
         </div>
         <div>
-          <h3 className="pitch-deck-h3 mb-4">Early User Testimonials</h3>
+          {/* <h3 className="pitch-deck-h3 mb-4">Early User Testimonials</h3> */}
           <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="border-l-4 border-pitch-primary pl-4">

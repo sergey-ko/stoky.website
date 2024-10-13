@@ -26,9 +26,10 @@ const solutionItems = [
 
 const SolutionSlide: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
-      <div className="md:col-span-3">
-      <h3 className="pitch-deck-h3 mb-8">From Graphical Analysis to Quant</h3>       
+    // <div className="grid grid-cols-1 md:grid-cols-6 gap-8">
+    <div>
+      {/* <div className="md:col-span-3"> */}
+      <h3 className="pitch-deck-h3 mb-8">Make Best Trading Practices and Portfolio Management Accessible to Retail Traders.</h3>
         {solutionItems.slice(0, 4).map((item, index) => (
           <div key={index} className="mb-4 flex items-start">
             <svg className="w-6 h-6 text-green-500 mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -40,8 +41,8 @@ const SolutionSlide: React.FC = () => {
             </div>
           </div>
         ))}
-      </div>
-      <div className="md:col-span-3">
+      {/* </div> */}
+      {/* <div className="md:col-span-3">
         <h3 className="pitch-deck-h3">{solutionItems[4].title}</h3>        
         <div className="mt-6 mb-6 bg-gray-700 w-full h-auto relative" style={{ aspectRatio: '16/9' }}>
           <Image
@@ -52,7 +53,7 @@ const SolutionSlide: React.FC = () => {
           />
         </div>
         <p className="pitch-deck-paragraph mt-6">{solutionItems[4].description}</p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -20,6 +20,7 @@ import ProblemPrpSlide from '@/components/pitch-deck/ProblemPrpSlide';
 import AskPrpSlide from '@/components/pitch-deck/AskPrpSlide';
 import CompetitiveLandscapeSlide from '@/components/pitch-deck/CompetitiveLandscapeSlide';
 import TargetAudienceSlide from '@/components/pitch-deck/TargetAudienceSlide';
+import ExistingSolutionsSlide from '@/components/pitch-deck/ExistingSolutions';
 
 const PitchDeckPage: React.FC = () => {
   const { theme, setTheme } = useTheme()
@@ -37,14 +38,16 @@ const PitchDeckPage: React.FC = () => {
   const slides = [
     { title: "Stoky", Content: IntroSlide },
     // { title: "Current Trading Platforms Stuck in 90s", Content: ProblemSlide },
-    { title: "Challenges Faced by Traders", Content: ProblemPrpSlide },
+    { title: "Challenges Faced by Retail Traders", Content: ProblemPrpSlide },
+    { title: "Existing Solutions", Content: ExistingSolutionsSlide }, 
     //{ title: "Bridging the Gap between Graph and Quant Platforms", Content: SolutionSlide },
     { title: "Bridging the Gap", Content: SolutionSlide },
-    { title: "Growing user base with strong retention", Content: TractionSlide },
+    //{ title: "User Growth Projections", Content: TractionSlide },
     { title: "Tap into a Multi-Billion-Dollar Market", Content: MarketOpportunitySlide },
-    { title: "Target Audience: Who We're Serving", Content: TargetAudienceSlide },
-    { title: "Subscription based revenue model", Content: BusinessModelSlide },
+    { title: "Target Audience", Content: TargetAudienceSlide },
     { title: "What Sets Stoky Apart", Content: ProductSlide },
+    { title: "Subscription based revenue model", Content: BusinessModelSlide },
+    
     { title: "Competitive Landscape", Content: CompetitiveLandscapeSlide },
     { title: "Targeting retail traders and hobby quants", Content: GoToMarketSlide },
     { title: "Forecasting Growth", Content: FinancialProjectionsSlide },

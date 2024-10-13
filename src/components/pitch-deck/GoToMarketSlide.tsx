@@ -35,10 +35,9 @@ const additionalStrategies = [
 
 const GoToMarketSlide: React.FC = () => {
   return (
-    <div className="flex flex-col space-y-8">
-      <h2 className="text-2xl font-bold text-center mb-6">Go-to-Market Strategy</h2>
+    <div className="flex flex-col space-y-8">      
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 mt-12">
         {phaseData.map((phase, index) => (
           <div key={phase.title} className="flex flex-col bg-gray-800 rounded-lg overflow-hidden shadow-lg">
             <svg className="w-full h-24" viewBox="0 0 100 50">
@@ -52,14 +51,14 @@ const GoToMarketSlide: React.FC = () => {
               <text x="40" y="32" textAnchor="middle" fill="#ffffff" fontSize="18" fontWeight="bold">{phase.title.toUpperCase()}</text>
               <path d="M80,0 L100,25 L80,50" fill="none" stroke="#ffffff" strokeWidth="2" />
             </svg>
-            <div className="p-4">
+            <div className="p-4 mt-12">
               <p className="pitch-deck-paragraph">{phase.description}</p>
             </div>
           </div>
         ))}
       </div>
 
-      <div className="mt-8">
+      {/* <div className="mt-8">
         <h3 className="pitch-deck-h3">Additional Strategies</h3>
         <ul className="space-y-2">
           {additionalStrategies.map((strategy, index) => (
@@ -69,7 +68,7 @@ const GoToMarketSlide: React.FC = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

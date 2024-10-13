@@ -1,20 +1,29 @@
 import React from 'react';
 import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip } from 'chart.js';
+import { FaCheckCircle } from 'react-icons/fa';
 
 ChartJS.register(ArcElement, Tooltip);
 
 const AskPrpSlide: React.FC = () => {
+  const chartColors = ['#FF6384', '#36A2EB', '#FFCE56'];
+
   const data = {
     labels: ['Marketing', 'Product', 'Operations'],
     datasets: [
       {
         data: [50, 30, 20],
-        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
-        hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+        backgroundColor: chartColors,
+        hoverBackgroundColor: chartColors,
       },
     ],
   };
+
+  const allocationDetails = [
+    { description: 'Marketing & Customer Acquisition', percentage: 50 },
+    { description: 'Product Development', percentage: 30 },
+    { description: 'Operations & Scaling', percentage: 20 },
+  ];
 
   const options = {
     responsive: true,
@@ -37,12 +46,15 @@ const AskPrpSlide: React.FC = () => {
   return (
     <div className="slide-container" style={{ display: 'flex' }}>
       <div className="left-column" style={{ flex: 1, padding: '20px' }}>
-        <h3 className="pitch-deck-h3">Seeking: $250.000 in pre-seed funding through convertible debt.</h3>
-        <p className="pitch-deck-paragraph">Allocation of Funds:</p>
+        <p className="pitch-deck-paragraph"><strong>Seeking:</strong> $250.000 in pre-seed funding through convertible debt.</p>
+        <p className="pitch-deck-paragraph mt-6 mb-2"><strong>Allocation of Funds:</strong></p>
         <ul className="pitch-deck-list">
-          <p className="pitch-deck-paragraph">Marketing & Customer Acquisition: <strong>50%</strong></p>
-          <p className="pitch-deck-paragraph">Product Development: <strong>30%</strong></p>
-          <p className="pitch-deck-paragraph">Operations & Scaling: <strong>20%</strong></p>
+          {allocationDetails.map((item, index) => (
+            <li key={item.description} className="pitch-deck-paragraph flex items-center">
+              <FaCheckCircle color={chartColors[index]} className="mr-2" />
+              <span>{item.description}: <strong>{item.percentage}%</strong></span>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="right-column" style={{ flex: 1, padding: '20px' }}>

@@ -4,7 +4,7 @@ import Image from 'next/image';
 const features = [
   {
     title: "Strategy Studio",
-    description: "Advanced quant platform to build and test sophisticated strategies.",
+    description: "An intuitive platform to build, test, and optimize complex trading strategies without coding.",
     comingSoon: true
   },
   {
@@ -15,7 +15,7 @@ const features = [
   },
   {
     title: "StokyGPT",
-    description: "Ask questions in natural language to get deep insights quickly.",
+    description: "Our AI assistant interprets natural language inputs to deliver personalized trading strategies.",
     imageSrc: "/images/chat-interface-mockup.png",
     imageAlt: "Chat Interface Feature"
   }
