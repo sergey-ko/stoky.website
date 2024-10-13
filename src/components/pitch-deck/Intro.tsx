@@ -8,9 +8,9 @@ const IntroSlide: React.FC = () => {
         <img src="/images/stoky-logo.png" alt="Stoky Logo" className="w-40 h-40 mr-6" />
       </div> */}
       <div className="mt-8 space-y-4">
-        <h1 className="text-4xl font-bold text-pitch-secondary">Stoky is a Quant-capable Trading Assistant.</h1>
+        <h1 className="text-4xl font-bold text-pitch-secondary">Stoky: The AI-Powered Quant Trading Assistant</h1>
         <p className="pitch-deck-paragraph">
-        Welcome to the Future of AI-Assisted Retail Trading
+        Empowering the Future of Retail Trading
           {/* We're on a mission to revolutionize the way people trade by bridging the gap between Graph and Quant platforms. */}
         </p>
 
